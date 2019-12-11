@@ -1,0 +1,104 @@
+﻿@model IEnumerable<CouncilFaultReport.Models.Permit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.Label("Visitor Name")
+        </th>
+        <th>
+            @Html.Label("Permit Number")
+        </th>
+        <th>
+            @Html.Label("VRN")
+        </th>
+        <th>
+            @Html.Label("Postcode")
+        </th>
+        <th>
+            @Html.Label("Organisation")
+        </th>
+        <th>
+            @Html.Label("Property Name Or Number")
+        </th>
+        <th>
+            @Html.Label("Street Name")
+        </th>
+        <th>
+            @Html.Label("Zone")
+        </th>
+        <th>
+            @Html.Label("Telephone")
+        </th>
+        <th>
+            @Html.Label("Authorisation Status")
+        </th>
+        <th>
+            @Html.Label("Permit Type")
+        </th>
+        <th>
+            @Html.Label("Books")
+        </th>
+        <th>
+            @Html.Label("Fuel Type")
+        </th>
+        <th>
+            @Html.Label("Detail")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name_title)
+            @Html.DisplayFor(modelItem => item.first_name)
+            @Html.DisplayFor(modelItem => item.last_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permit_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vrn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.postcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.organisation_or_charity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.property_name_or_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.street_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.zone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telephone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.authorisation_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permit_type)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+    }
+
+</table>

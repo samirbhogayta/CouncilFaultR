@@ -1,0 +1,560 @@
+﻿@model CouncilFaultReport.Models.Permit
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Permit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_valid_from)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_valid_from)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_valid_until)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_valid_until)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_issue_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_issue_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_cancel_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_cancel_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.first_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.first_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.postcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.organisation_or_charity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.organisation_or_charity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.property_name_or_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.property_name_or_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address_line)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address_line)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.street_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.street_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.town)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.town)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.zone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.zone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.authorisation_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.authorisation_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.authorisation_status_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.authorisation_status_note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_tnc_accepted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_tnc_accepted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permit_period_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permit_period_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vrn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vrn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.co2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.co2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_cheque_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_cheque_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_cheque_short_code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_cheque_short_code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_cheque_cc_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_cheque_cc_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_bacs_payment_ref)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_bacs_payment_ref)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_cc_payment_last_4_digit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_cc_payment_last_4_digit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_card_expiry_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_card_expiry_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_cc_payment_ref_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_cc_payment_ref_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_postal_order_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_postal_order_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.payment_page_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_page_note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_of_times_change_of_registration_done)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_of_times_change_of_registration_done)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_of_times_change_of_courtesy_car_done)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_of_times_change_of_courtesy_car_done)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_permit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_permit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_renewed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_renewed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_cheque_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_cheque_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_cheque_short_code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_cheque_short_code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_cheque_cc_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_cheque_cc_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_bacs_payment_ref)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_bacs_payment_ref)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_cc_payment_last_4_digit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_cc_payment_last_4_digit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_card_expiry_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_card_expiry_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_cc_payment_ref_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_cc_payment_ref_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_postal_order_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_postal_order_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.refund_page_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.refund_page_note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updated_at)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updated_at)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_by)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updated_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updated_by)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
