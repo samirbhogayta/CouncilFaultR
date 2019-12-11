@@ -33,8 +33,8 @@ namespace CouncilFaultReport.Models
             //_server = _client.GetServer();
             //var client = new MongoClient("mongodb+srv://admin:<password>@councilf-permit-1h8d5.azure.mongodb.net/test?retryWrites=true&w=majority");
             //var client = new MongoClient("mongodb://admin:admin%40redspark@councilf-permit-1h8d5.azure.mongodb.net/councilf_permitDB");
-            //var client = new MongoClient("mongodb+srv://admin:admin%40redspark@councilf-permit-1h8d5.azure.mongodb.net/councilf_permitDB?retryWrites=true&w=majority");
-            var client = new MongoClient("mongodb://localhost:27017/Councilf_PermitDB");
+            var client = new MongoClient("mongodb+srv://admin:admin%40redspark@councilf-permit-1h8d5.azure.mongodb.net/councilf_permitDB?retryWrites=true&w=majority");
+            //var client = new MongoClient("mongodb://localhost:27017/Councilf_PermitDB");
             _mongoDb = client.GetDatabase("councilf_permitDB");
         }
         public IMongoCollection<Permit> Permit
